@@ -1,0 +1,163 @@
+.carousel-inner {
+  max-height: 20rem;
+}
+/* Estilos personalizados para la sección de información */
+.info-section {
+  background-color: #f8f9fa;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #212529;
+}
+
+.info-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.info-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.info-title {
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #343a40;
+}
+html {
+  scroll-behavior: smooth;
+}
+/*seccion quienes somos*/
+#quienes-somos {
+  font-family: "Crimson Pro", serif;
+}
+/*seccion experiencias*/
+#experiencias {
+  font-family: "Covered By Your Grace", cursive;
+}
+
+/* Sección de servicios con fondo oscuro */
+.servicios-section {
+  background-color: #121212;
+}
+
+.servicios-section .card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+.servicios-section .card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.servicios-section .card-text {
+  font-size: 0.95rem;
+}
+.bg-dark .section-title {
+  color: #ffffff;
+}
+
+.bg-dark .lead {
+  color: #cccccc;
+}
+
+.bg-dark iframe {
+  border: none;
+}
+/* Estilo general para la sección de películas */
+#peliculas {
+  background-color: #121212; /* Oscuro tipo cine */
+  color: #f8f9fa; /* Texto claro */
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+/* Título con estilo elegante */
+#peliculas .section-title {
+  font-family: "Georgia", serif;
+  font-style: italic;
+  font-weight: bold;
+  color: #ffffff;
+  border-bottom: 2px solid #dc3545; /* Línea roja sutil */
+  display: inline-block;
+  padding-bottom: 0.5rem;
+}
+
+/* Subtítulo */
+#peliculas p.lead {
+  font-size: 1.15rem;
+  color: #dddddd;
+}
+
+/* Videos enmarcados con sombra suave */
+#peliculas .ratio {
+  box-shadow: 0 0.5rem 1rem rgba(255, 255, 255, 0.05);
+  border-radius: 0.75rem;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+#peliculas .ratio:hover {
+  transform: scale(1.03);
+}
+
+/* Espaciado entre tarjetas de video */
+#peliculas .col-md-6 {
+  margin-bottom: 1rem;
+}
+#peliculas {
+  font-family: "Covered By Your Grace", cursive;
+}
+/* Sección Nuestro Equipo - Estilos personalizados */
+#equipo {
+  background-color: #000; /* fondo negro real */
+}
+
+#equipo .section-title {
+  font-weight: 700;
+  color: #fff;
+}
+
+#equipo .lead {
+  color: #bbb;
+}
+
+#equipo .card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: none;
+  background-color: #1f1f1f !important;
+}
+
+#equipo .card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 20px rgba(255, 255, 255, 0.1);
+}
+
+#equipo .card-title {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+#equipo .card-text {
+  font-size: 0.95rem;
+  color: #ddd;
+}
+
+#equipo .text-muted {
+  color: #999 !important;
+}
+
+#equipo img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+}
+.bg-black {
+  background-color: #000 !important;
+}

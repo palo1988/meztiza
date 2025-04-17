@@ -1,0 +1,540 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="icon" type="image/png" href="./img/carretep.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+
+    <title>MESTIZ</title>
+
+</head>
+
+<body>
+
+    <!---
+    ****************************
+    ENCABEZADO
+    ****************---->
+
+    <header class="container-fluid bg-dark d-flex justify-content-center">
+        <p class="text-light mb-o p-2 fs-3">MEZTIZA</p>
+    </header>
+    <!---
+    ****************************
+    MENU
+    ****************---->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">MEZTIZA</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#inicio">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#quienes-somos">¿Quiénes somos?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#servicios">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experiencias">Experiencias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#equipo">Equipo</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!---
+    ****************************
+    carrusel
+    ****************---->
+    <section id="inicio">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="3000">
+                    <img src="./img/pic1.jpg" class="d-block w-100" alt="slide1">
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img src="./img/pic2.jpg" class="d-block w-100" alt="slide2">
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img src="./img/pic3.jpg" class="d-block w-100" alt="slide3">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
+
+
+    </section>
+
+    <!-- Sección: Introducción, Misión y Visión -->
+    <section class="info-section py-5" id="quienes-somos">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">¿Quiénes somos?</h2>
+                <p class="lead text-muted">
+                    Somos una productora creativa que impulsa iniciativas culturales y artísticas desde su concepción
+                    hasta su realización.
+                    Transformamos ideas en experiencias visuales y auditivas únicas que inspiran e impactan.
+                </p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="info-card p-4 h-100 shadow-sm bg-light rounded">
+                        <h3 class="info-title">Misión</h3>
+                        <p>
+                            Transformar ideas creativas en experiencias culturales significativas, gestionando cada
+                            etapa del proceso —desde la
+                            planificación hasta la difusión— con excelencia, compromiso y pasión.
+                            Promovemos la colaboración entre talentos y sectores diversos para generar contenidos
+                            visuales y sonoros que inspiren,
+                            impacten y contribuyan al desarrollo cultural y social.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="info-card p-4 h-100 shadow-sm bg-light rounded">
+                        <h3 class="info-title">Visión</h3>
+                        <p>
+                            Ser una referente en la producción creativa cultural, reconocida por la innovación, la
+                            calidad y el impacto positivo
+                            de nuestros proyectos. Aspiramos a consolidar alianzas estratégicas que fortalezcan el
+                            ecosistema artístico,
+                            expandir nuestro alcance internacional y seguir siendo un puente entre la creatividad, la
+                            tecnología y la transformación social.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Sección: Servicios -->
+    <section class="servicios-section py-5 text-white" id="servicios">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title text-white">Nuestros Servicios</h2>
+                <p class="lead text-light">
+                    Ofrecemos soluciones creativas y culturales que dan vida a tus ideas.
+                </p>
+            </div>
+
+            <div class="row g-4">
+                <!-- Servicio 1 -->
+                <div class="col-md-4">
+                    <div class="card bg-dark border-0 shadow-sm h-100">
+                        <img src="./img/servicio1.jpg" class="card-img-top" alt="Planificación cultural">
+                        <div class="card-body">
+                            <h5 class="card-title text-white">Planificación y Coordinación</h5>
+                            <p class="card-text text-light">
+                                Gestionamos eventos culturales, exposiciones y proyectos artísticos desde la concepción
+                                hasta la ejecución.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Servicio 2 -->
+                <div class="col-md-4">
+                    <div class="card bg-dark border-0 shadow-sm h-100">
+                        <img src="./img/servicio2.jpg" class="card-img-top" alt="Financiación y Patrocinios">
+                        <div class="card-body">
+                            <h5 class="card-title text-white">Financiación y Patrocinios</h5>
+                            <p class="card-text text-light">
+                                Te asesoramos en la obtención de recursos y alianzas estratégicas para garantizar el
+                                éxito de tu proyecto.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Servicio 3 -->
+                <div class="col-md-4">
+                    <div class="card bg-dark border-0 shadow-sm h-100">
+                        <img src="./img/servicio3.jpg" class="card-img-top" alt="Promoción cultural">
+                        <div class="card-body">
+                            <h5 class="card-title text-white">Promoción y Difusión</h5>
+                            <p class="card-text text-light">
+                                Implementamos estrategias de comunicación para aumentar la visibilidad y el impacto de
+                                tus proyectos culturales.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección: Experiencias -->
+    <section id="experiencias" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title mb-o p-2 fs-1">Experiencias</h2>
+                <p class="lead text-muted">Descubre algunas de nuestras producciones y colaboraciones culturales.</p>
+            </div>
+            <div class="text-center mb-5">
+                <h4 class="section-title mb-o p-2 fs-1 fst-italic">Documentales</h4>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <!-- Video 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="ratio ratio-16x9 shadow-sm rounded">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/oNM7HoGH7dE?si=yldPs3-0E7EY6GfW"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <!-- Video 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="ratio ratio-16x9 shadow-sm rounded">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/RqeIVZZUqu4?si=tJ8kuuSLvrvoFAZY"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <!-- Video 3 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="ratio ratio-16x9 shadow-sm rounded">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/tdSKr09DH_E?si=_pUFjeX-YD8DImQg"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Sección: Películas -->
+    <section id="peliculas" class="py-5 bg-dark text-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title mb-0 p-2 fs-1 fst-italic">Películas</h2>
+                <br>
+                <br>
+                <p class="lead text-light">Producciones cinematográficas que han marcado nuestra trayectoria artística.
+                </p>
+            </div>
+
+            <div class="row g-4 justify-content-center">
+                <!-- Película 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="ratio ratio-16x9 shadow-sm rounded">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/NgDvT3i5B6s?si=-aoBpkq7zkQtv-e7"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <!-- Película 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="ratio ratio-16x9 shadow-sm rounded">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/mzszUXHaL7Q?si=384dGXuXN5PjbOGv"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- Sección: Spots -->
+    <section id="spots" class="py-5 bg-white text-dark">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title mb-0 p-2 fs-1">Spots</h2>
+                <p class="lead text-muted">Explora nuestros anuncios y piezas audiovisuales creativas.</p>
+            </div>
+
+            <div class="row g-4 justify-content-center">
+                <!-- Spot 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="ratio ratio-16x9 shadow-sm rounded">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/f2YDulMF-W4?si=_qJQkQePQ_26GwGX"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <!-- Spot 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="ratio ratio-16x9 shadow-sm rounded">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/lnh3eZT7gPo?si=HKYzlbcNRL0LkWGQ"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección: Videoclips -->
+    <section id="videoclips" class="py-5 text-light" style="background-color: #000;">
+        <div class="container text-center">
+            <h2 class="section-title mb-3 fs-1 text-light">Videoclips</h2>
+            <p class="lead text-muted">Explora nuestros mejores videoclips musicales.</p>
+
+            <div id="videoclipCarousel" class="carousel slide mx-auto" data-bs-ride="carousel" style="max-width: 75%;">
+                <div class="carousel-inner">
+
+                    <!-- Video 1 -->
+                    <div class="carousel-item active">
+                        <div class="ratio ratio-16x9 rounded shadow">
+                            <iframe width="560" height="315"
+                                src="https://www.youtube.com/embed/RJJc-RNqewY?si=sZdg_dooX_zHwoTt"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+
+                    <!-- Video 2 -->
+                    <div class="carousel-item">
+                        <div class="ratio ratio-16x9 rounded shadow">
+                            <iframe width="560" height="315"
+                                src="https://www.youtube.com/embed/5MxIyg13m9U?si=A16JhR92lzPVsiPa"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+
+                    <!-- Video 3 -->
+                    <div class="carousel-item">
+                        <div class="ratio ratio-16x9 rounded shadow">
+                            <iframe width="560" height="315"
+                                src="https://www.youtube.com/embed/XbtEh8Z5gmU?si=UqikWNNf9PXUqXnh"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Controles -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#videoclipCarousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#videoclipCarousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección: Nuestro Equipo -->
+    <section id="equipo" class="py-5 bg-dark text-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title fs-1">Nuestro Equipo</h2>
+                <p class="lead text-muted">Conoce a las mentes creativas que dan vida a Meztiza</p>
+            </div>
+
+            <div class="row justify-content-center g-4">
+
+                <!-- Stefan Rodriguez -->
+                <div class="col-md-6">
+                    <div class="card mb-3 bg-secondary text-light" style="max-width: 540px;">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="https://via.placeholder.com/150" class="img-fluid rounded-start"
+                                    alt="Stefan Rodriguez">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Stefan Rodriguez</h5>
+                                    <p class="card-text">Director y productor ecuatoriano especializado en cine y
+                                        contenido audiovisual. Egresado de la Universidad de las Artes, ha dirigido
+                                        guiones, fotografía y campañas para marcas nacionales, internacionales y
+                                        proyectos políticos. Ha trabajado en tres películas nacionales y una
+                                        internacional, además de impulsar iniciativas culturales en diversas provincias
+                                        del país.</p>
+                                    <p class="card-text"><small class="text-muted">Última actualización reciente</small>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gustavo Macias -->
+                <div class="col-md-6">
+                    <div class="card mb-3 bg-secondary text-light" style="max-width: 540px;">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="https://via.placeholder.com/150" class="img-fluid rounded-start"
+                                    alt="Gustavo Macias">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Gustavo Macias</h5>
+                                    <p class="card-text">Guionista y estratega creativo enfocado en marketing y cine
+                                        documental. Formado en la Universidad de las Artes, ha desarrollado campañas
+                                        comunicacionales para los sectores público y privado. Su trabajo se centra en
+                                        comunidades ancestrales, publicidad, y contenido viral para redes sociales.</p>
+                                    <p class="card-text"><small class="text-muted">Última actualización reciente</small>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Jonathan Calva -->
+                <div class="col-md-6">
+                    <div class="card mb-3 bg-secondary text-light" style="max-width: 540px;">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="https://via.placeholder.com/150" class="img-fluid rounded-start"
+                                    alt="Jonathan Calva">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Jonathan Calva</h5>
+                                    <p class="card-text">Escritor, guionista y artista multidisciplinario. Apasionado
+                                        por la literatura fantástica, el cine y el teatro. Creador de universos
+                                        narrativos, conceptos publicitarios y relatos con identidad. Fundador del
+                                        festival “Loja sobre tablas” y de la editorial “Akira”. Formado en Taller
+                                        Imagen, Buenos Aires.</p>
+                                    <p class="card-text"><small class="text-muted">Última actualización reciente</small>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+
+</body>
+<!-- Footer -->
+<footer class="bg-black text-light py-5">
+    <div class="container">
+        <div class="row">
+
+            <!-- Marca / Logo -->
+            <div class="col-md-4 mb-4">
+                <h5 class="text-uppercase">Meztiza</h5>
+                <p class="text-muted">Contamos historias que dejan huella. Producción audiovisual con identidad
+                    latinoamericana.</p>
+            </div>
+
+            <!-- Navegación -->
+            <div class="col-md-4 mb-4">
+                <h5 class="text-uppercase">Navegación</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#inicio" class="text-light text-decoration-none">Inicio</a></li>
+                    <li><a href="#equipo" class="text-light text-decoration-none">Nuestro Equipo</a></li>
+                    <li><a href="#videoclips" class="text-light text-decoration-none">Videoclips</a></li>
+                    <li><a href="#contacto" class="text-light text-decoration-none">Contacto</a></li>
+                </ul>
+            </div>
+
+            <!-- Redes Sociales -->
+            <div class="col-md-4 mb-4">
+                <h5 class="text-uppercase">Síguenos</h5>
+                <a href="#" class="text-light me-3"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="text-light me-3"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="text-light me-3"><i class="bi bi-youtube"></i></a>
+                <a href="#" class="text-light"><i class="bi bi-envelope"></i></a>
+            </div>
+
+        </div>
+
+        <hr class="border-light" />
+
+        <div class="text-center">
+            <small class="text-muted">© 2025 Meztiza. Todos los derechos reservados.</small>
+        </div>
+    </div>
+</footer>
+
+</html>
