@@ -29,45 +29,77 @@
     ****************************
     ENCABEZADO
     ****************---->
-    <section>
-        <header class="container-fluid bg-dark d-flex justify-content-center">
-            <p class="text-light mb-o p-2 fs-3">MEZTIZA</p>
+    <section id="sticky-parallax-header">
+        <header class="container-fluid d-flex justify-content-center align-items-center">
+            <p class="text-light fs-1">MEZTIZA</p>
         </header>
-        <!---
+    </section>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <!---
     ****************************
     MENU
     ****************---->
 
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">MEZTIZA</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">MEZTIZA</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
 
-                        <li class="nav-item">
-                            <a class="nav-link" href="#inicio">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#quienes-somos">¿Quiénes somos?</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#servicios">Servicios</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#experiencias">Experiencias</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#equipo">Equipo</a>
-                        </li>
-                    </ul>
-                </div>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#inicio">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#quienes-somos">¿Quiénes somos?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#servicios">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experiencias">Experiencias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#equipo">Equipo</a>
+                    </li>
+                </ul>
             </div>
-        </nav>
+        </div>
+    </nav>
     </section>
     <!---
     ****************************
@@ -145,60 +177,35 @@
         </div>
     </section>
     <!-- Sección: Servicios -->
-    <section class="servicios-section py-5 text-white" id="servicios">
-        <div class="container">
-            <div class="text-center mb-5">
-                <h2 class="section-title text-white">Nuestros Servicios</h2>
-                <p class="lead text-light">
-                    Ofrecemos soluciones creativas y culturales que dan vida a tus ideas.
+    <section class="servicios-section">
+        <ul class="cards">
+            <li>
+                <img src="./img/servicios/img1.png" alt="Planificación cultural" />
+                <h5 class="card-title">Planificación y Coordinación</h5>
+                <p class="card-text">
+                    Gestionamos eventos culturales, exposiciones y proyectos artísticos desde la concepción hasta la
+                    ejecución.
                 </p>
-            </div>
-
-            <div class="row g-4">
-                <!-- Servicio 1 -->
-                <div class="col-md-4">
-                    <div class="card bg-dark border-0 shadow-sm h-100">
-                        <img src="./img/servicio1.jpg" class="card-img-top" alt="Planificación cultural">
-                        <div class="card-body">
-                            <h5 class="card-title text-white">Planificación y Coordinación</h5>
-                            <p class="card-text text-light">
-                                Gestionamos eventos culturales, exposiciones y proyectos artísticos desde la concepción
-                                hasta la ejecución.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Servicio 2 -->
-                <div class="col-md-4">
-                    <div class="card bg-dark border-0 shadow-sm h-100">
-                        <img src="./img/servicio2.jpg" class="card-img-top" alt="Financiación y Patrocinios">
-                        <div class="card-body">
-                            <h5 class="card-title text-white">Financiación y Patrocinios</h5>
-                            <p class="card-text text-light">
-                                Te asesoramos en la obtención de recursos y alianzas estratégicas para garantizar el
-                                éxito de tu proyecto.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Servicio 3 -->
-                <div class="col-md-4">
-                    <div class="card bg-dark border-0 shadow-sm h-100">
-                        <img src="./img/servicio3.jpg" class="card-img-top" alt="Promoción cultural">
-                        <div class="card-body">
-                            <h5 class="card-title text-white">Promoción y Difusión</h5>
-                            <p class="card-text text-light">
-                                Implementamos estrategias de comunicación para aumentar la visibilidad y el impacto de
-                                tus proyectos culturales.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+            </li>
+            <li>
+                <img src="./img/servicios/img2.png" alt="Financiación y Patrocinios" />
+                <h5 class="card-title">Financiación y Patrocinios</h5>
+                <p class="card-text">
+                    Te asesoramos en la obtención de recursos y alianzas estratégicas para garantizar el éxito de tu
+                    proyecto.
+                </p>
+            </li>
+            <li>
+                <img src="./img/servicios/img3.png" alt="Promoción cultural" />
+                <h5 class="card-title">Promoción y Difusión</h5>
+                <p class="card-text">
+                    Implementamos estrategias de comunicación para aumentar la visibilidad y el impacto de tus proyectos
+                    culturales.
+                </p>
+            </li>
+        </ul>
     </section>
+
 
     <!-- Sección: Experiencias -->
     <section id="experiencias" class="py-5 bg-light">

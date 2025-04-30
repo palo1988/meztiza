@@ -1,6 +1,48 @@
-.carousel-inner {
+/*.carousel-inner {
   max-height: 20rem;
+}*/
+/* Animación del header */
+@keyframes sticky-parallax-header-move-and-size {
+  from {
+    background-position: 50% 0;
+    height: 100vh;
+    font-size: calc(4vw + 1em);
+  }
+  to {
+    background-position: 50% 100%;
+    background-color: #0b1584;
+    height: 15vh;
+    font-size: 2em;
+  }
 }
+
+/* Sección del header sticky */
+#sticky-parallax-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1030; /* por encima del menú */
+  background: url("https://picsum.photos/1200/800") no-repeat center/cover;
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: sticky-parallax-header-move-and-size linear forwards;
+  animation-timeline: scroll();
+  animation-range: 0vh 85vh;
+}
+#carouselExampleControls {
+  height: 600px; /* Ajusta la altura que necesites */
+  overflow: hidden;
+}
+
+#carouselExampleControls .carousel-item img {
+  height: 100%;
+  object-fit: cover; /* Para que la imagen se recorte proporcionalmente sin deformarse */
+}
+
 /* Estilos personalizados para la sección de información */
 .info-section {
   background-color: #f8f9fa;
@@ -160,4 +202,101 @@ html {
 }
 .bg-black {
   background-color: #000 !important;
+}
+
+:root {
+  --cover-size: 300px;
+}
+.servicios-section {
+  width: 100vw; /* ocupar todo el ancho de la ventana */
+  min-height: 100vh; /* opcional: ocupar también toda la altura */
+  background-color: #111; /* fondo oscuro para que luzca más */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* evita scrolls raros */
+  padding: 2rem 0;
+}
+
+.cards {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+  margin: 0;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  white-space: nowrap;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.cards li {
+  display: inline-block;
+  scroll-snap-align: center;
+  width: var(--cover-size);
+  aspect-ratio: 1/1;
+  background: #222;
+  border-radius: 1rem;
+  text-align: center;
+  color: white;
+  view-timeline-name: --li-in-and-out-of-view;
+  view-timeline-axis: inline;
+  animation: linear adjust-z-index both;
+  animation-timeline: --li-in-and-out-of-view;
+  perspective: 40em;
+  padding: 1rem;
+  flex-shrink: 0;
+}
+
+.cards li img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+  -webkit-box-reflect: below 0.5em
+    linear-gradient(transparent, rgba(0, 0, 0, 0.25));
+  animation: linear rotate-cover both;
+  animation-timeline: --li-in-and-out-of-view;
+}
+
+.cards li h5 {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+}
+
+.cards li p {
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+/* Keyframes */
+@keyframes adjust-z-index {
+  0% {
+    z-index: 1;
+  }
+  50% {
+    z-index: 100;
+  }
+  100% {
+    z-index: 1;
+  }
+}
+
+@keyframes rotate-cover {
+  0% {
+    transform: translateX(-100%) rotateY(-45deg);
+  }
+  35% {
+    transform: translateX(0) rotateY(-45deg);
+  }
+  50% {
+    transform: rotateY(0deg) translateZ(1em) scale(1.2);
+  }
+  65% {
+    transform: translateX(0) rotateY(45deg);
+  }
+  100% {
+    transform: translateX(100%) rotateY(45deg);
+  }
 }
